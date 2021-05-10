@@ -7,39 +7,57 @@
     <title>Stranger than Fiction - Body in Flight</title>
     <link href="open-iconic/font/css/open-iconic.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Nexa' rel='stylesheet' type='text/css'>
+<!--    <link href='http://fonts.googleapis.com/css?family=Nexa' rel='stylesheet' type='text/css'>-->
     <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.9.0.js"></script>
 </head>
 <style>
 
-    @media only screen and (min-width: 92px) {
-        #row {
-            display: flex;
-        }
+    * {
+        box-sizing: border-box;
+    }
 
-        #left-panel, #api-frame {
-            width: 640px;
-            height: 336px;
-            margin-left: 24px;
-            padding-top: 1px;
-        }
+    #row {
+        display:inline-block;
 
-        #right-panel {
-            width: 200px;
-            height: 450px;
-        }
+    }
+
+     #api-frame {
+        width: 750px;
+        height: 576px;
+        margin-left: 24px;
+        margin-top: 30px;
+        padding-top: 1px;
+    }
+
+    #right-panel {
+        width: 600px;
+        /*height: 450px;*/
+        margin-left: 754px;
+        margin-top: -600px;
+        padding-top: 1px;
+
+    }
+
+    #right-panel  h3 {
+        /*margin-left: 50px;*/
+
+        font-size:25px;
+        padding-left: 46px;
+
     }
 
     body {
         background-color: lightgrey;
-        font-family: sans-serif ;
+        font-family: inherit ;
     }
 
+
     button {
-        width: 120px;
-        height: 55px;
-        /*padding: 5px;*/
-        margin-bottom: 8px;
+        width: 220px;
+        height: 90px;
+        padding: 5px;
+        margin-bottom: 32px;
+        font-size: 20px;
         background-color: rgb(0, 0, 0);
         border: 3px solid rgb(177, 177, 177);
         font-family: "inherit";
@@ -61,6 +79,10 @@
         list-style: none;
     }
 
+    li {
+        display: block;
+    }
+
     p {
         font-family: "inherit";
         color: white;
@@ -68,8 +90,10 @@
     }
 
     #bottom-page {
-        margin-top: 22px;
         margin-left: 32px;
+        margin-top: -26px;
+        font-size: 20px;
+
     }
 
     img {
@@ -80,33 +104,194 @@
         margin-left: 15px;
     }
 
-    #addLogo {
-        position: absolute;
+
+    .topnav {
+        background-color: black;
     }
 
-    #content-container{
-        margin: 32px;
-        width: 640px;
+    .topnav > div {
+
+     height: 14px;
+     padding-top: 14px
+ }
+     .topnav  > div > a {
+
+      color: lightslategray;
+      margin-left: 80px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 22px;
+  }
+
+    .topnav > h1 {
+        background-color: rgb(47, 48, 144);
+        color: #fafafa;
+        text-align: center;
+        padding-top:7px;
+        font-size: 28px
+ }
+
+
+    main{
+        background-color: #fafafa;
+        width: 1050px;
+        height: 730px;
+        border-color: black;
+        margin-left: 435px;
+
+
     }
 
-    #content > p{
-        color: black;
+    footer > div {
+        font-size: 20px;
     }
 
+    /*#annotations{*/
+    /*    display: inline-block;*/
+    /*}*/
+
+
+
+
+    #icon {
+
+      display:none;
+        font-size: 20px;
+        margin-left: 50px;
+        /*padding-bottom:2px;*/
+        float: bottom;
+
+
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        /* For mobile phones: */
+        main {
+            /*background-color: #fafafa;*/
+            width: 100%;
+            height: 550px;
+            margin-left: 1px;
+
+        }
+
+        footer > div {
+            width: 100%;
+            margin-left: -30%;
+
+
+        }
+
+        #left-panel, #api-frame {
+            width: 100%;
+            height: 340px;
+            margin-left: 2px;
+            margin-top: 15px;
+            padding-top: 1px;
+        }
+
+        #right-panel {
+            width: 100%;
+            /*height: 150px;*/
+            margin-left:-40px;
+            /*margin-right: 15px;*/
+            margin-top: -156px;
+            /*display: flex;*/
+            /*padding-top: 1px;*/
+            display:inline-block;
+            position: absolute;
+
+        }
+
+        #right-panel  h3 {
+            text-align: center;
+            margin-top: 155px;
+            font-size:25px;
+            /*padding-left: 46px;*/
+
+        }
+
+        button {
+            width: 75px;
+            height: 72px;
+            margin-left: 8px;
+            font-size: 11px;
+            padding: -1px;
+
+
+        }
+
+        li {
+            display: inline-flex;
+            float: left;
+            margin-top: -37px;
+
+
+        }
+
+
+        .topnav > div {
+            width: 100%;
+            font-size: 6px;
+            padding-top: 3px;
+            height: 20px;
+
+        }
+
+        footer > div {
+            width: 100%;
+            font-size: 9px;
+        }
+
+
+        .topnav > div > a {
+
+            font-size: 14px;
+        }
+
+        .topnav > h1 {
+            font-size: 16px
+
+        }
+        #bottom-page {
+            width: 100%;
+            margin-left: 6px;
+            margin-top: 114px;
+            font-size: 12px;
+        }
+
+        #right-panel strong {
+            font-size: 10px;
+            /*padding-left: 90px;*/
+            display: inline-block;
+
+        }
+
+
+        #icon {
+
+            display: none;
+            font-size: 12px;
+             width: 100%;
+           margin-top: 53px;
+            /*float: bottom;*/
+            position: absolute;
+        }
+
+        }
 
 </style>
-<body>
-<div class="topnav" style="background-color: black;">
-    <div style="height: 14px; padding-top: 18px"><a
-            style=" color: lightgrey ;margin-left: 80px; font-size: 16px; font-family: Helvetica,Arial,sans-serif ; ">THE <strong
-            style="color: white">MUSEUM </strong>OF <strong style="color: white">FLIGHT</strong> </a></div>
-    <h1 style=" background-color: rgb(47, 48, 144); height: 40px; color: #fafafa;text-align: center ; font-size: 18px; padding-top:7px; ">
-        Body in Flight
+
+<div class="topnav" >
+    <div>
+        <a>THE <strong style="color: white">MUSEUM </strong>OF <strong style="color: white">FLIGHT</strong> </a>
+    </div>
+    <h1 >
+        Sketchfab API - Stranger than Fiction: Body in Flight
     </h1>
 </div>
-<main style="background-color: #fafafa; width: 850px; height: 630px; border-color: black; margin-left: 180px">
-    <div id="row">
 
+<main >
+    <div id="row">
         <div id="left-panel">
             <iframe src="" id="api-frame" width="10" height="40" style="margin: 5px 4px 5px 10px" ;
                     allow="autoplay; fullscreen;  vr" allowvr allowfullscreen mozallowfullscreen="true"
@@ -117,35 +302,33 @@
             </div>
         </div>
         <div id="right-panel">
-            <h3 style="margin-left: 25px;  margin-top: 8px; font-size: 16px; font-family: inherit;" >  <strong> 3D Model Annotation </strong> </h3>
-            <div id="annotations"></div>
-
-            <button id="addLogo" style="width: 120px; height: 55px; margin-left:42px; margin-top: -15px" onclick="addLogo()">Add Logo
-            </button>
+            <h3 >  <strong> 3D Model Annotation </strong> </h3>
+            <div id="content" style="font-size: 0px"; >  </div>
+            <div> <span id="icon" class="oi" data-glyph="volume-high" aria-hidden="true"> Read Aloud </span></div>
+            <div id="annotations" style="display: inline-block">
+            </div>
         </div>
 
     </div>
 
-    <div id="content-container" style="margin-top: -114px; font-size: 16px; font-family: inherit">
-        <div id="content"></div>
-        <div><span id="icon" class="oi" data-glyph="volume-high" aria-hidden="true" style="display:none;"></span></div>
-    </div>
 
-    <div id="bottom-page" style="margin-top: 20px; font-size: 16px; font-family: inherit">
+    <div id="bottom-page">
         <p class="address" style="color: black;">The Museum of Flight, 9404 E. Marginal Way South, Seattle, <br> WA
             98108-4097</p>
         <p class="phone" style="color: black">206-764-5700
             <a href="mailto:info@museumofflight.org" style="color: red">info@museumofflight.org</a>
             <a href="/Contact/" style="color: red">Contact Us</a></p>
-    </div>
+
+</div>
 
 </main>
-
-<footer style="margin-left: 15%">
-    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; font-size: 14px">
+<footer style="margin-left: 24%">
+    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; ">
         <div class="legal"><span>©2021. The Museum of Flight</span> — <span>All Rights Reserved.</span></div>
     </div>
 </footer>
+
+
 
 
 <script type="text/javascript">
@@ -188,9 +371,9 @@
         title: annTitle[3],
         content: annContent[3]
     }
-    
 
-    
+
+
     // (from the docs) By default, the latest version of the viewer API will be used.
     const client = new Sketchfab(iframe);
 
@@ -203,10 +386,10 @@
         api.start();
         api.addEventListener('viewerready', () => {
             console.log('Viewer is ready');
-            console.log(api);            
-            
+            console.log(api);
 
-        // define promises so that annotation list is updated at the end of changing annotation content    
+
+        // define promises so that annotation list is updated at the end of changing annotation content
         const updateAnnOnePromise = () => {
             return new Promise((resolve, reject) => {
                 api.updateAnnotation(0, annOneOptions, (err, information) => {
@@ -271,7 +454,7 @@
         });
     }
 
-  
+
     // create a list of buttons with the names of the annotations
     function createAnnotationsBtns(list, api) {
         let ul = document.createElement('ul');
@@ -311,7 +494,7 @@
             document.getElementById('icon').style.display = "block";
 
             document.getElementById('icon').addEventListener('click', textToSpeech);
-            
+
         }
     }
 
@@ -319,7 +502,7 @@
         console.log("clicked");
         let text = document.getElementById('content').innerText;
         if ('speechSynthesis' in window) {
-        
+
         }else{
             alert("Sorry, your browser cannot read the annotation content.");
         }
