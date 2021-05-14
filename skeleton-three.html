@@ -25,17 +25,15 @@
         width: 750px;
         height: 576px;
         margin-left: 24px;
-        /*margin-top: 30px;*/
+        margin-top: 30px;
         padding-top: 1px;
-
     }
 
     #right-panel {
         width: 600px;
         margin-left: 754px;
-        /*margin-top: -600px;*/
+        margin-top: -600px;
         padding-top: 1px;
-        position: absolute;
 
     }
 
@@ -99,8 +97,8 @@
         height: 65px;
         width: 65px;
         position: absolute;
-        margin-top: -81px;
-        margin-left: 30px;
+        margin-top: -86px;
+        margin-left: 15px;
     }
 
 
@@ -158,56 +156,64 @@
 
         /* For mobile phones: */
         main {
-
+            /*background-color: #fafafa;*/
             width: 100%;
             height: 750px;
             margin-left: 1px;
             margin-top: -8px;
 
+        }
+
+        footer > div {
+            width: 100%;
+            margin-left: -30%;
+
 
         }
 
-        #left-panel #api-frame {
+        #left-panel, #api-frame {
+
+            align-content: center;
             width: 100%;
-            height: 620px;
-            margin-top: 116px;
-            /*position: absolute;*/
-             margin-left: 19px;
-            /*display: inline;*/
-            position: relative;
+            height: 520px;
+            align-content: center;
+            margin-right: 22px;
 
         }
 
         #right-panel {
             width: 100%;
-            margin-left: -30px;
+            margin-left: -40px;
             margin-top: -155px;
-            /*display: inline-block;*/
-            float: left;
+            display: inline-block;
+            position: absolute;
+
+
         }
 
         #right-panel h3 {
             text-align: center;
-            margin-bottom: 130px;
+            margin-top: 157px;
             padding-left: 46px;
 
         }
 
         button {
-            width: 76px;
-            height: 80px;
-            margin-left: 3px;
+            width: 100%;
+            height: 28px;
+            margin-left: 8px;
             font-size: 12px;
             padding: 5px;
-            /*display: inline-flex;*/
+            margin-bottom: 39px;
 
 
         }
 
         li {
-            display: inline-block;
+            display: block;
             float: left;
-            /*margin-top: -37px;*/
+            margin-top: -37px;
+            width: 100%;
 
 
         }
@@ -240,13 +246,13 @@
         #bottom-page {
             width: 100%;
             margin-left: 6px;
-            margin-top: 24px;
+            margin-top: 154px;
             font-size: 12px;
         }
 
         #right-panel strong {
             font-size: 14px;
-            /*display: inline-block;*/
+            display: inline-block;
 
         }
 
@@ -275,16 +281,8 @@
 
 <main>
     <div id="row">
-
-        <div id="right-panel">
-            <h3><strong> 3D Model Annotation </strong></h3>
-            <div id="content" style="font-size: 0px" ;></div>
-            <div><span id="icon" class="oi" data-glyph="volume-high" aria-hidden="true"> Read Aloud </span></div>
-            <div id="annotations">
-            </div>
-        </div>
         <div id="left-panel">
-            <iframe src="" id="api-frame" ;
+            <iframe src="" id="api-frame" width="10" height="40" style="margin: 5px 4px 5px 10px" ;
                     allow="autoplay; fullscreen;  vr" allowvr allowfullscreen mozallowfullscreen="true"
                     webkitallowfullscreen="true">
             </iframe>
@@ -292,7 +290,13 @@
                 <img src="https://pbs.twimg.com/profile_images/832632585519984642/OLwrGzlL.jpg" alt="Museum of Flight">
             </div>
         </div>
-
+        <div id="right-panel">
+            <h3><strong> 3D Model Annotation </strong></h3>
+            <div id="content" style="font-size: 0px" ;></div>
+            <div><span id="icon" class="oi" data-glyph="volume-high" aria-hidden="true"> Read Aloud </span></div>
+            <div id="annotations" style="display: inline-block">
+            </div>
+        </div>
 
     </div>
 
@@ -307,54 +311,23 @@
     </div>
 
 </main>
-<!--<footer style="margin-left: 24%">-->
-<!--    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; ">-->
-<!--        <div class="legal"><span>©2021. The Museum of Flight</span> — <span>All Rights Reserved.</span></div>-->
-<!--    </div>-->
-<!--</footer>-->
+<footer style="margin-left: 24%">
+    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; ">
+        <div class="legal"><span>©2021. The Museum of Flight</span> — <span>All Rights Reserved.</span></div>
+    </div>
+</footer>
 
 
 <script type="text/javascript">
     const iframe = document.getElementById('api-frame');
-    const uid = 'a13e4ac873914f1a9d29c80e7f039dd3'; // model id from SketchFab
+    const uid = 'a5542c3c44fd416189d76698ed022756'; // model id from SketchFab
 
     // data related to the annotations and setting options in SketchFab
     // information was taken from here: https://www.faa.gov/pilots/training/airman_education/media/IntroAviationPhys.pdf
-    const annTitle = [
-        'Introduction',
-        'Effects in Altitude',
-        'Spatial Disorientation & Sensory Illusions',
-        'Hypoxia'
-    ];
-
-    const annContent = [
-        'The environmental changes of greatest physiological significance involved in flight are: marked changes in barometric pressure, considerable variation in temperature, and movement at high speed in three dimensions.',
-        'Humans are ground dwelling creatures that function best at low altitudes. Anytime humans find themselves at extreme altitude they are at a disadvantage. Precautions must be taken to curb the threats of hypoxia, decompression sickness, hypothermia, and spatial disorientation.',
-        'Sensory receptors in various parts of the body provide the brain with information relative to your position in your environment. They practically tell you which way is up. When flying, however, you are at a disadvantage when trying to interpret visual cues. In the air, you lack the visual cues that a continuous background provides for recognizing objects and deciding their size and distance.',
-        'Hypoxia is described as a state of oxygen deficiency in the blood, tissues, and cells sufficient to cause an impairment of body functions. Any condition that interferes with oxygen\'s normal path to the cells will bring on hypoxia.'
-    ];
-
-
     const annOneOptions = {
-        title: annTitle[0],
-        content: annContent[0]
+        title: 'Hypoxia',
+        content: 'Hypoxia is described as a state of oxygen deficiency in the blood, tissues, and cells sufficient to cause an impairment of body functions. Any condition that interferes with oxygen\'s normal path to the cells will bring on hypoxia.'
     };
-
-    const annTwoOptions = {
-        title: annTitle[1],
-        content: annContent[1]
-    }
-
-    const annThreeOptions = {
-        title: annTitle[2],
-        content: annContent[2]
-    }
-
-    const annFourOptions = {
-        title: annTitle[3],
-        content: annContent[3]
-    }
-
 
     // (from the docs) By default, the latest version of the viewer API will be used.
     const client = new Sketchfab(iframe);
@@ -381,34 +354,7 @@
                 });
             };
 
-            const updateAnnTwoPromise = () => {
-                return new Promise((resolve, reject) => {
-                    api.updateAnnotation(1, annTwoOptions, (err, information) => {
-                        if (err) return reject(err);
-                        resolve(information);
-                    });
-                });
-            };
-
-            const updateAnnThreePromise = () => {
-                return new Promise((resolve, reject) => {
-                    api.updateAnnotation(2, annThreeOptions, (err, information) => {
-                        if (err) return reject(err);
-                        resolve(information);
-                    });
-                });
-            };
-
-            const updateAnnFourPromise = () => {
-                return new Promise((resolve, reject) => {
-                    api.updateAnnotation(3, annFourOptions, (err, information) => {
-                        if (err) return reject(err);
-                        resolve(information);
-                    });
-                });
-            };
-
-            Promise.all([updateAnnOnePromise(), updateAnnTwoPromise(), updateAnnThreePromise(), updateAnnFourPromise()])
+            updateAnnOnePromise()
                 .then((data) => console.log(data))
                 .then(() => getAnnotations(api))
         });
@@ -421,15 +367,10 @@
 
     // function called after updating all annotations
     function getAnnotations(api) {
-        api.getAnnotationList((err, annons) => {
+        api.getAnnotation(0, (err, information) => {
             if (!err) {
-                console.log('Getting annotations!');
-                console.log(annons);
-
-
-                console.log(annons);
-                createAnnotationsBtns(annons, api);
-                //createChangeAnnotationsImageBtn(api);
+                console.log(information);
+                createAnnotationsBtn(information, api);
             } else {
                 console.log(err);
             }
@@ -438,35 +379,30 @@
 
 
     // create a list of buttons with the names of the annotations
-    function createAnnotationsBtns(list, api) {
+    function createAnnotationsBtn(info, api) {
         let ul = document.createElement('ul');
-        list.forEach((ann, index) => {
-            let li = document.createElement('li');
-            li.innerHTML = `<button id="ann_${index}">${ann.name}</button>`;
-            li.className = "btn";
-            ul.appendChild(li);
-        });
+        let li = document.createElement('li');
+        li.innerHTML = `<button id="ann_0">${info.name}</button>`;
+        li.className = "btn";
+        ul.appendChild(li);
         annotationsList.appendChild(ul);
 
-        let btnList = document.getElementsByClassName('btn');
-        Array.from(btnList).forEach((el, index) => {
-            el.addEventListener('click', () => {
+        document.getElementById(`ann_0`).addEventListener('click', () => {
                 //remove eventlistener to prevent text to speech repeating previous annotation
                 document.getElementById('icon').removeEventListener('click', textToSpeech);
-                api.gotoAnnotation(index,
+                api.gotoAnnotation(0,
                     {preventCameraAnimation: false, preventCameraMove: false}, // if preventCameraAnimation is set to tru, there will be no camera movement between transitions
                     (err, index) => {
                         if (!err) {
                             console.log('Going to annotation', index);
                         }
                     });
-                api.getAnnotation(index, (err, annoObj) => {
+                api.getAnnotation(0, (err, annoObj) => {
                     if (!err) {
                         printAnnotationContent(annoObj)
                     }
                 });
             });
-        });
     }
 
     function printAnnotationContent(obj) {
