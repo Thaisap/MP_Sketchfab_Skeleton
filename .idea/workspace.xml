@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee45f79-ed71-4f70-94c1-d5fc0f5c2cef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skeleton-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-one.html" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton-one.html" afterDir="false" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skeleton-one.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+            <state relative-caret-position="400">
+              <caret line="221" column="2" selection-start-line="221" selection-start-column="2" selection-end-line="221" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -218,12 +215,12 @@
       <workItem from="1620702330331" duration="1274000" />
       <workItem from="1620944999502" duration="3797000" />
       <workItem from="1620964720516" duration="2574000" />
-      <workItem from="1621021973680" duration="16687000" />
+      <workItem from="1621021973680" duration="17101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81654000" />
+    <option name="totallyTimeSpent" value="82068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -369,8 +366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/skeleton-one.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+        <state relative-caret-position="400">
+          <caret line="221" column="2" selection-start-line="221" selection-start-column="2" selection-end-line="221" selection-end-column="2" />
         </state>
       </provider>
     </entry>
