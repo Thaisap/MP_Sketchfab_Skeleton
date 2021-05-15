@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee45f79-ed71-4f70-94c1-d5fc0f5c2cef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-three.html" beforeDir="false" />
@@ -46,7 +45,9 @@
         <entry file="file://$PROJECT_DIR$/skeleton-one.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="519">
-              <caret line="228" column="35" lean-forward="true" selection-start-line="228" selection-start-column="35" selection-end-line="228" selection-end-column="35" />
+
+              <caret line="237" column="35" lean-forward="true" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
+
             </state>
           </provider>
         </entry>
@@ -63,8 +64,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skeleton-3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="183" column="20" lean-forward="true" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+
+            <state relative-caret-position="612">
+              <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+
             </state>
           </provider>
         </entry>
@@ -204,7 +207,8 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82096000" />
+
+    <option name="totallyTimeSpent" value="81704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -311,7 +315,7 @@
     <entry file="file://$PROJECT_DIR$/skeleton-two.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3238">
-          <caret line="483" lean-forward="true" selection-start-line="314" selection-end-line="483" />
+          <caret line="483" selection-start-line="314" selection-end-line="483" />
         </state>
       </provider>
     </entry>
@@ -339,7 +343,7 @@
     <entry file="file://$PROJECT_DIR$/skeleton-one.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
-          <caret line="228" column="35" lean-forward="true" selection-start-line="228" selection-start-column="35" selection-end-line="228" selection-end-column="35" />
+          <caret line="237" column="35" lean-forward="true" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
         </state>
       </provider>
     </entry>
