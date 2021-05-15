@@ -3,16 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="6ee45f79-ed71-4f70-94c1-d5fc0f5c2cef" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-one.html" beforeDir="false" />
+<<<<<<< HEAD
 =======
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-three.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-two.html" beforeDir="false" />
 >>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
+=======
+>>>>>>> main
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,6 +32,9 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+=======
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
 =======
@@ -62,11 +71,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 >>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
         <entry file="file://$PROJECT_DIR$/skeleton-2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="363" column="40" selection-start-line="363" selection-start-column="40" selection-end-line="363" selection-end-column="40" />
+=======
+>>>>>>> 966cb4a0405090ac357c7ec0633f790133ef1268
+        <entry file="file://$PROJECT_DIR$/skeleton-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="372" lean-forward="true" selection-start-line="372" selection-end-line="372" />
+>>>>>>> main
             </state>
           </provider>
         </entry>
@@ -75,14 +92,23 @@
         <entry file="file://$PROJECT_DIR$/skeleton-3.html">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="323">
               <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+=======
+            <state relative-caret-position="442">
+              <caret line="359" column="69" lean-forward="true" selection-start-line="359" selection-start-column="69" selection-end-line="359" selection-end-column="69" />
+>>>>>>> main
 =======
 
             <state relative-caret-position="612">
               <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
 
+<<<<<<< HEAD
 >>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
+=======
+>>>>>>> 966cb4a0405090ac357c7ec0633f790133ef1268
+>>>>>>> main
             </state>
           </provider>
         </entry>
@@ -133,8 +159,13 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/skeleton-three.html" />
         <option value="$PROJECT_DIR$/skeleton-one.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/skeleton-2.html" />
         <option value="$PROJECT_DIR$/skeleton-3.html" />
+=======
+        <option value="$PROJECT_DIR$/skeleton-3.html" />
+        <option value="$PROJECT_DIR$/skeleton-2.html" />
+>>>>>>> main
       </list>
     </option>
   </component>
@@ -223,11 +254,19 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="82758000" />
 =======
 
     <option name="totallyTimeSpent" value="81704000" />
 >>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
+=======
+    <option name="totallyTimeSpent" value="81742000" />
+=======
+
+    <option name="totallyTimeSpent" value="81704000" />
+>>>>>>> 966cb4a0405090ac357c7ec0633f790133ef1268
+>>>>>>> main
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -313,6 +352,7 @@
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/mskeleton-three.html" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/skeleton-two.html" />
     <entry file="file://$PROJECT_DIR$/skeleton-three.html" />
     <entry file="file://$PROJECT_DIR$/skeleton-one.html" />
@@ -348,6 +388,27 @@
         <state relative-caret-position="519">
           <caret line="237" column="35" lean-forward="true" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
 >>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
+=======
+    <entry file="file://$PROJECT_DIR$/skeleton-two.html" />
+    <entry file="file://$PROJECT_DIR$/skeleton-three.html" />
+    <entry file="file://$PROJECT_DIR$/skeleton-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="442">
+          <caret line="359" column="69" lean-forward="true" selection-start-line="359" selection-start-column="69" selection-end-line="359" selection-end-column="69" />
+=======
+        <state relative-caret-position="357">
+          <caret line="183" column="20" lean-forward="true" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+>>>>>>> 966cb4a0405090ac357c7ec0633f790133ef1268
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton-one.html" />
+    <entry file="file://$PROJECT_DIR$/skeleton-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="372" lean-forward="true" selection-start-line="372" selection-end-line="372" />
+>>>>>>> main
         </state>
       </provider>
     </entry>
