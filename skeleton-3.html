@@ -11,6 +11,7 @@
     <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.9.0.js"></script>
 </head>
 <style>
+
     * {
         box-sizing: border-box;
     }
@@ -161,7 +162,6 @@
         margin-left: 25px;
         font-size: 28px;
     }
-
     @media only screen and (max-width: 768px) {
 
         /* For mobile phones: */
@@ -317,7 +317,6 @@
         }
 
     }
-
 </style>
 
 <div class="topnav">
@@ -361,9 +360,8 @@
             <a href="/Contact/" style="color: red">Contact Us</a></p>
 
     </div>
+    <a class="nextPage" href="skeleton-one.html">Skeleton1 </a>
     <a class="nextPage" href="skeleton-2.html">Skeleton2 </a>
-    <a class="nextPage" href="skeleton-3.html">Skeleton3 </a>
-
 </main>
 <!--<footer style="margin-left: 24%">-->
 <!--    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; ">-->
@@ -374,16 +372,14 @@
 
 <script type="text/javascript">
     const iframe = document.getElementById('api-frame');
-    const uid = '734e7381a4fc4fc79a5f72fab629da06'; // model id from SketchFab
+    const uid = 'a5542c3c44fd416189d76698ed022756'; // model id from SketchFab
 
     // data related to the annotations and setting options in SketchFab
     // information was taken from here: https://www.faa.gov/pilots/training/airman_education/media/IntroAviationPhys.pdf
-
     const annOneOptions = {
-        title: 'Introduction',
-        content: 'The environmental changes of greatest physiological significance involved in flight are: marked changes in barometric pressure, considerable variation in temperature, and movement at high speed in three dimensions.'
+        title: 'Hypoxia',
+        content: 'Hypoxia is described as a state of oxygen deficiency in the blood, tissues, and cells sufficient to cause an impairment of body functions. Any condition that interferes with oxygen\'s normal path to the cells will bring on hypoxia.'
     };
-
 
     // (from the docs) By default, the latest version of the viewer API will be used.
     const client = new Sketchfab(iframe);
@@ -410,8 +406,8 @@
                 });
             };
 
-
-            updateAnnOnePromise().then((data) => console.log(data))
+            updateAnnOnePromise()
+                .then((data) => console.log(data))
                 .then(() => getAnnotations(api))
         });
     };
@@ -436,7 +432,6 @@
 
     // create a list of buttons with the names of the annotations
     function createAnnotationsBtn(info, api) {
-        //console.log(info);
         let ul = document.createElement('ul');
         let li = document.createElement('li');
         li.innerHTML = `<button id="ann_0">${info.name}</button>`;
@@ -445,22 +440,21 @@
         annotationsList.appendChild(ul);
 
         document.getElementById(`ann_0`).addEventListener('click', () => {
-                //remove eventlistener to prevent text to speech repeating previous annotation
-                document.getElementById('icon').removeEventListener('click', textToSpeech);
-                api.gotoAnnotation(0,
-                    {preventCameraAnimation: false, preventCameraMove: false}, // if preventCameraAnimation is set to tru, there will be no camera movement between transitions
-                    (err, index) => {
-                        if (!err) {
-                            console.log('Going to annotation', index);
-                        }
-                    });
-                api.getAnnotation(0, (err, annoObj) => {
+            //remove eventlistener to prevent text to speech repeating previous annotation
+            document.getElementById('icon').removeEventListener('click', textToSpeech);
+            api.gotoAnnotation(0,
+                {preventCameraAnimation: false, preventCameraMove: false}, // if preventCameraAnimation is set to tru, there will be no camera movement between transitions
+                (err, index) => {
                     if (!err) {
-                        printAnnotationContent(annoObj)
+                        console.log('Going to annotation', index);
                     }
                 });
+            api.getAnnotation(0, (err, annoObj) => {
+                if (!err) {
+                    printAnnotationContent(annoObj)
+                }
             });
-
+        });
     }
 
     function printAnnotationContent(obj) {
