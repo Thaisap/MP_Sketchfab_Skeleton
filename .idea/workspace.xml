@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee45f79-ed71-4f70-94c1-d5fc0f5c2cef" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton-one.html" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton-three.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton-two.html" beforeDir="false" />
+>>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,6 +27,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+=======
+        <entry file="file://$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skeleton-one.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+
+              <caret line="237" column="35" lean-forward="true" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
+
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+>>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
         <entry file="file://$PROJECT_DIR$/skeleton-2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -31,8 +74,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skeleton-3.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="323">
               <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+=======
+
+            <state relative-caret-position="612">
+              <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+
+>>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
             </state>
           </provider>
         </entry>
@@ -172,7 +222,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="82758000" />
+=======
+
+    <option name="totallyTimeSpent" value="81704000" />
+>>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -257,9 +312,26 @@
     <entry file="file://$PROJECT_DIR$/MP_Sketchfab_Skeleton/index.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/mskeleton-three.html" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/skeleton-two.html" />
     <entry file="file://$PROJECT_DIR$/skeleton-three.html" />
     <entry file="file://$PROJECT_DIR$/skeleton-one.html" />
+=======
+    <entry file="file://$PROJECT_DIR$/skeleton-two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3238">
+          <caret line="483" selection-start-line="314" selection-end-line="483" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton-three.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
     <entry file="file://$PROJECT_DIR$/skeleton-2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -269,8 +341,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/skeleton-3.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="323">
           <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+=======
+        <state relative-caret-position="519">
+          <caret line="237" column="35" lean-forward="true" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
+>>>>>>> 1234fd33696611b6ba548606a16862edb64f8d2d
         </state>
       </provider>
     </entry>
