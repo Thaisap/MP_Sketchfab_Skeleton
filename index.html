@@ -20,6 +20,8 @@
 
     }
 
+
+    /*sketchfab viewer*/
     #api-frame {
         width: 750px;
         height: 646px;
@@ -28,6 +30,7 @@
         padding-top: 1px;
 
     }
+
 
     #right-panel {
         width: 600px;
@@ -38,12 +41,10 @@
 
     }
 
+
     #right-panel h3 {
         font-size: 25px;
         margin-left: 40px;
-
-        /*padding-left: 46px;*/
-
     }
 
     body {
@@ -75,10 +76,12 @@
     }
 
 
+    /*annotation buttons*/
     ul {
         list-style: none;
     }
 
+    /*annotation buttons*/
     li {
         display: block;
     }
@@ -86,14 +89,6 @@
     p {
         font-family: "inherit";
         color: white;
-
-    }
-
-    #bottom-page {
-        margin-left: 25px;
-        margin-top: 28px;
-        font-size: 14px;
-        position: absolute;
 
     }
 
@@ -134,6 +129,7 @@
     }
 
 
+    /*white element of the page*/
     main {
         background-color: #fafafa;
         width: 1050px;
@@ -144,10 +140,7 @@
 
     }
 
-    footer > div {
-        font-size: 20px;
-    }
-
+    /*read-out loud icon*/
     #icon {
 
         display: none;
@@ -157,6 +150,7 @@
 
     }
 
+    /*hyperlink under sketchfab viewer*/
     .nextPage {
         margin-left: 25px;
         font-size: 28px;
@@ -166,11 +160,6 @@
 
         /* For mobile phones: */
 
-
-        /*#row {*/
-        /*    display: flex;*/
-
-        /*}*/
 
         main {
 
@@ -237,12 +226,10 @@
             display: inline-block;
             float: left;
             margin-top: 15px;
-            /*margin-left: -2px;*/
             list-style: none;
             text-align: center;
             margin-right: 20px;
-            /*padding-left: 5px;*/
-            /*position: fixed;*/
+
         }
 
 
@@ -275,13 +262,6 @@
 
 
         }
-        #bottom-page {
-            width: 100%;
-            margin-left: 0px;
-            margin-top: 4px;
-            font-size: 12px;
-            opacity: 0;
-        }
 
         #right-panel strong {
             font-size: 14px;
@@ -291,7 +271,6 @@
 
 
         #icon {
-            /*display: none;*/
             float: left ;
             position: absolute;
             font-size: 12px;
@@ -302,7 +281,6 @@
         }
 
         img {
-            /*margin-top: 6px;*/
             margin-left: 6px;
 
         }
@@ -343,25 +321,10 @@
 
     </div>
 
-
-<!--    <div id="bottom-page">-->
-<!--        <p class="address" style="color: black;">The Museum of Flight, 9404 E. Marginal Way South, Seattle, <br> WA-->
-<!--            98108-4097</p>-->
-<!--        <p class="phone" style="color: black">206-764-5700-->
-<!--            <a href="mailto:info@museumofflight.org" style="color: red">info@museumofflight.org</a>-->
-<!--            <a href="/Contact/" style="color: red">Contact Us</a></p>-->
-
-<!--    </div>-->
     <a class="nextPage" href="skeleton-2.html">Skeleton2 </a>
     <a class="nextPage" href="skeleton-3.html">Skeleton3 </a>
 
 </main>
-<!--<footer style="margin-left: 24%">-->
-<!--    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; ">-->
-<!--        <div class="legal"><span>©2021. The Museum of Flight</span> — <span>All Rights Reserved.</span></div>-->
-<!--    </div>-->
-<!--</footer>-->
-
 
 <script type="text/javascript">
     const iframe = document.getElementById('api-frame');
@@ -382,12 +345,12 @@
 
     // Created to manipulate the HTML element with the id "annotations"
     const annotationsList = document.getElementById('annotations');
-    
+
     // Success event handler from client.init (at the very bottom)
     const onSuccessInit = (api) => {
         api.start();
         api.addEventListener('viewerready', () => {
-            
+
             // Define promises so that annotation list is updated at the end of changing annotation content
             // Not needed if annotations text and position is already created in SketchFab.
             const updateAnnOnePromise = () => {
@@ -450,7 +413,7 @@
                             console.log('Going to annotation', index);
                         }
                     });
-                
+
                 // When clicked on, we call the function to get the annotation content.
                 api.getAnnotation(0, (err, annoObj) => {
                     if (!err) {
