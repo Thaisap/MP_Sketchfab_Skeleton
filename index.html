@@ -365,35 +365,36 @@
 
 <script type="text/javascript">
     const iframe = document.getElementById('api-frame');
+    // CHANGE MODEL ID HERE
     const uid = '734e7381a4fc4fc79a5f72fab629da06'; // model id from SketchFab
 
     // data related to the annotations and setting options in SketchFab
     // information was taken from here: https://www.faa.gov/pilots/training/airman_education/media/IntroAviationPhys.pdf
 
+    // Variable created to update the data for annotations.
+    // Not needed if annotations text and position is already created in SketchFab.
     const annOneOptions = {
         title: 'Introduction',
         content: 'The environmental changes of greatest physiological significance involved in flight are: marked changes in barometric pressure, considerable variation in temperature, and movement at high speed in three dimensions.'
     };
 
-
-    // (from the docs) By default, the latest version of the viewer API will be used.
     const client = new Sketchfab(iframe);
 
-    // various HTML elements
+    // Created to manipulate the HTML element with the id "annotations"
     const annotationsList = document.getElementById('annotations');
-    // const logoChange = document.getElementById('logoChange');
-
-    // success handler from client.init (at the very bottom)
+    
+    // Success event handler from client.init (at the very bottom)
     const onSuccessInit = (api) => {
         api.start();
         api.addEventListener('viewerready', () => {
-            console.log('Viewer is ready');
-            console.log(api);
-
-
-            // define promises so that annotation list is updated at the end of changing annotation content
+            
+            // Define promises so that annotation list is updated at the end of changing annotation content
+            // Not needed if annotations text and position is already created in SketchFab.
             const updateAnnOnePromise = () => {
                 return new Promise((resolve, reject) => {
+                    // 0 is the index of the annotations. annOneOptions is the new data for the annotation.
+                    // For more information: https://sketchfab.com/developers/viewer/functions#api-updateAnnotation
+                    // Not needed if annotations text and position is already created in SketchFab.
                     api.updateAnnotation(0, annOneOptions, (err, information) => {
                         if (err) return reject(err);
                         resolve(information);
@@ -401,22 +402,23 @@
                 });
             };
 
-
+            // Once all the API has finished updating the annotations, call the function getAnnotations.
             updateAnnOnePromise().then((data) => console.log(data))
                 .then(() => getAnnotations(api))
         });
     };
 
-    // failure handler from client.init (at the very bottom)
+    // Failure handler from client.init (at the very bottom)
     const onErrorInit = () => {
         console.log('Viewer has trouble loading');
     };
 
-    // function called after updating all annotations
+    // Call this function to get all the annotations and pass the annotation information to the next function call.
     function getAnnotations(api) {
         api.getAnnotation(0, (err, information) => {
             if (!err) {
                 console.log(information);
+                // createAnnotationsBtn is called to create the buttons on the webpage based on the annotation information.
                 createAnnotationsBtn(information, api);
             } else {
                 console.log(err);
@@ -425,19 +427,22 @@
     }
 
 
-    // create a list of buttons with the names of the annotations
+    // Create a list of buttons with the names of the annotations
     function createAnnotationsBtn(info, api) {
-        //console.log(info);
+        // Create a list of buttons onto the webpage.
         let ul = document.createElement('ul');
         let li = document.createElement('li');
+        // Add the title of the annotation as the text of the button.
         li.innerHTML = `<button id="ann_0">${info.name}</button>`;
         li.className = "btn";
         ul.appendChild(li);
         annotationsList.appendChild(ul);
 
+        // Add a click event.
         document.getElementById(`ann_0`).addEventListener('click', () => {
-                //remove eventlistener to prevent text to speech repeating previous annotation
+                //Remove eventlistener to prevent text to speech repeating previous annotation
                 document.getElementById('icon').removeEventListener('click', textToSpeech);
+                // When clicked on, the camera view sweeps to the annotation.
                 api.gotoAnnotation(0,
                     {preventCameraAnimation: false, preventCameraMove: false}, // if preventCameraAnimation is set to tru, there will be no camera movement between transitions
                     (err, index) => {
@@ -445,6 +450,8 @@
                             console.log('Going to annotation', index);
                         }
                     });
+                
+                // When clicked on, we call the function to get the annotation content.
                 api.getAnnotation(0, (err, annoObj) => {
                     if (!err) {
                         printAnnotationContent(annoObj)
@@ -454,6 +461,10 @@
 
     }
 
+    // Function is used to:
+    // (1) Print the annotation content. (No longer used in this demo.)
+    // (2) Display a sound icon on the webpage.
+    // (3) Add a click event to the icon for text to speech.
     function printAnnotationContent(obj) {
         console.log(obj.content);
         if (obj.content !== null) {
@@ -465,18 +476,19 @@
         }
     }
 
+    // Function is used for text to speech (with the Web Speech API).
     function textToSpeech() {
-        console.log("clicked");
+        // Get annotation conetent as what content to speak.
         let text = document.getElementById('content').innerText;
+        // Error message to show if browser doesn't support Web Speech API.
         if ('speechSynthesis' in window) {
 
         } else {
             alert("Sorry, your browser cannot read the annotation content.");
         }
         let speech = new SpeechSynthesisUtterance(text);
-        speech.lang = "en-US";
+        speech.lang = "en-US"; // Set language here.
         speechSynthesis.speak(speech);
-        console.log(text);
     }
 
     function addLogo() {
